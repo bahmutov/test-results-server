@@ -52,7 +52,7 @@ jobs:
           command: $(npm bin)/now-pipeline --alias $ALIAS --test 'npm run e2e'
       - run:
           name: Test against the new alias
-          command: NOW_URL=$FULL_URL/version npm run e2e
+          command: NOW_URL=$FULL_URL npm run e2e
       - run:
           name: Prune other deploys
           command: $(npm bin)/now-pipeline-prune
