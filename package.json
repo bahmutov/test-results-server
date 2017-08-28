@@ -103,5 +103,10 @@
     "micro": "8.0.3",
     "microrouter": "2.2.2",
     "version-middleware": "1.4.0"
+  },
+  "now": {
+    "env": {
+      "NODE_ENV": "production"
+    }
   }
 }
