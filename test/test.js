@@ -2,7 +2,7 @@ const test = require('ava')
 const got = require('got')
 const is = require('check-more-types')
 const la = require('lazy-ass')
-const {concat} = require('urlconcat')
+const { concat } = require('urlconcat')
 
 const isVersionInfo = is.schema({
   version: is.unemptyString,
@@ -32,7 +32,7 @@ test('server /hello/:who', async t => {
   t.snapshot(info.body)
 })
 
-test.only('save tests', async t => {
+test('save tests', async t => {
   const results = {
     tests: [
       {
@@ -43,8 +43,8 @@ test.only('save tests', async t => {
     version: '0.0.0-development'
   }
   const url = `/tests/${client}/${project}/${t.title}`
-  await got.post(toFullUrl(url), {json: true, body: results})
+  await got.post(toFullUrl(url), { json: true, body: results })
   // get tests back
-  const back = (await got.get(toFullUrl(url), {json: true})).body
+  const back = (await got.get(toFullUrl(url), { json: true })).body
   t.deepEqual(back, results)
 })
