@@ -5,16 +5,10 @@
 [![NPM][npm-icon] ][npm-url]
 
 [![Build status][ci-image] ][ci-url]
+[![CircleCI](https://circleci.com/gh/bahmutov/test-results-server.svg?style=svg)](https://circleci.com/gh/bahmutov/test-results-server)
+
 [![semantic-release][semantic-image] ][semantic-url]
 [![js-standard-style][standard-image]][standard-url]
-
-## Install
-
-Requires [Node](https://nodejs.org/en/) version 6 or above.
-
-```sh
-npm install --save test-results-server
-```
 
 ## Use
 
