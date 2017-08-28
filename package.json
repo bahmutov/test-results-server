@@ -55,10 +55,10 @@
     "deps": "deps-ok && dependency-check --no-dev .",
     "issues": "git-issues",
     "license": "license-checker --production --onlyunknown --csv",
-    "lint": "standard --verbose --fix src/*.js",
+    "lint": "standard --verbose --fix src/*.js test/*.js",
     "prelint": "npm run pretty",
     "pretest": "npm run lint",
-    "pretty": "prettier-standard 'src/*.js'",
+    "pretty": "prettier-standard 'src/*.js' 'test/*.js'",
     "secure": "nsp check",
     "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";",
     "test": "npm run unit",
@@ -102,6 +102,9 @@
     "lazy-ass": "1.6.0",
     "micro": "8.0.3",
     "microrouter": "2.2.2",
+    "ramda": "0.24.1",
+    "urlconcat": "0.0.12",
+    "urlencode": "1.1.0",
     "version-middleware": "1.4.0"
   },
   "now": {
